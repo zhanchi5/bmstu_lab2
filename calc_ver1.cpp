@@ -41,9 +41,11 @@ else (powi = 0.5*(powi + a/powi));
 }
 return powi;
 }
+
+using namespace std;
 int main() {
 
-        using namespace std;
+        
         double division(float a, float b); // деление
         double multiplication(float a, float b);
         double sub(float a, float b);
@@ -54,12 +56,7 @@ int main() {
         setlocale(LC_ALL,"rus");
         float a=1.728,b=2.418;
         int c=16;
-        cout<< "Введите значение a\n ";
-        cin>>a;
-        cout<< "Введите значение b\n ";
-        cin>>b;
-
-
+        
         cout<<"\nCумма равна: " << summary(a,b);
         cout<<"\nРазность равна: "<< sub(a,b);
         cout<<"\nПроизведение равно: "<< multiplication(a,b);
