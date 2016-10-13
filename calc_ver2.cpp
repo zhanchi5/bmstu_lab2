@@ -40,13 +40,14 @@ if (involutioin(powi,2) == a) break;
 else (powi = 0.5*(powi + a/powi));
 }
 return powi;
-}
+} 
+
+using namespace std;
 int main() {
 
-        //int c;
         float a;
         float b;
-        using namespace std;
+       
         double division(float a, float b); // деление
         double multiplication(float a, float b);
         double sub(float a, float b);
@@ -55,22 +56,19 @@ int main() {
 
 
         setlocale(LC_ALL,"rus");
-        //float a=1.728,b=2.418;
-        //int c=16;
-      //  std::cout<<"Введите целое значение, корень которого хотите вычислить\n";
-      // std::cin>>c;
-        std::cout<< "Введите значение a\n ";
-        std::cin>>a;
-        std::cout<< "Введите значение b\n ";
-        std::cin>>b;
+   
+        cout<< "Введите значение a\n ";
+        cin>>a;
+        cout<< "Введите значение b\n ";
+        cin>>b;
 
 
-        std::cout<<"\nCумма равна: " << summary(a,b);
-        std::cout<<"\nРазность равна: "<< sub(a,b);
-        std::cout<<"\nПроизведение равно: "<< multiplication(a,b);
-        std::cout<<"\nЧастное равно: "<< division(a,b);
-        std::cout<<"\na в степени c равно: "<< involutioin(a,b);
-        std::cout<<"\nквадратный корень из c равен: "<<square_root(a) ;
+        cout<<"\nCумма равна: " << summary(a,b);
+        cout<<"\nРазность равна: "<< sub(a,b);
+        cout<<"\nПроизведение равно: "<< multiplication(a,b);
+        cout<<"\nЧастное равно: "<< division(a,b);
+        cout<<"\na в степени c равно: "<< involutioin(a,b);
+        cout<<"\nквадратный корень из c равен: "<<square_root(a) ;
 
 
         return 0;
