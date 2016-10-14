@@ -31,13 +31,13 @@ double involutioin(float a, float b)
         return result;
 }
 
-long double square_root(float a) {
+long double square_root(float x) {
 double powi = 1;
 int i;
-for(i=1;i<a;i++)
+for(i=1;i<x;i++)
 {
-if (involutioin(powi,2) == a) break;
-else (powi = 0.5*(powi + a/powi));
+if (involutioin(powi,2) == x) break;
+else (powi = 0.5*(powi + x/powi));
 }
 return powi;
 } 
