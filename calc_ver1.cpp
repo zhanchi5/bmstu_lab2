@@ -32,14 +32,18 @@ double involutioin(float a, float b)
 }
 
 long double square_root(float a) {
-double powi = 1;
-int i;
-for(i=1;i<a;i++)
-{
-if (involutioin(powi,2) == a) break;
-else (powi = 0.5*(powi + a/powi));
-}
-return powi;
+    double pow1=1; double b;
+    int i=0;
+    while(1) {
+        b=pow1;
+        pow1=0.5*(pow1+a/pow1); 
+        if (pow1>=b) {
+            i++; if (i>1);
+            break;
+        }
+    }
+    return(pow1);
+
 }
 
 using namespace std;
